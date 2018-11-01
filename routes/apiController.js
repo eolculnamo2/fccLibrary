@@ -18,4 +18,10 @@ router.get('/books', (req,res) => new BooksTasks().getAllBooks(res));
 //View One Book by Id
 router.get('/books/:id', (req,res) => new BooksTasks().getOneBook(res, req.params.id) );
 
+//Detele All Books
+router.delete('/books', (req,res) => new BooksTasks().deleteAllBooks(res) );
+
+//Delete One Book
+router.delete('/books/:id', (req,res) => new BooksTasks().deleteOneBook(res, req.params.id) );
+
 module.exports = router;

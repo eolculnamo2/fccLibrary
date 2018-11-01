@@ -17,7 +17,7 @@
         <button type="submit">New Book</button>
     </form>
 
-    <!-- Comment book -->
+    <!-- Add Comment -->
         <h2>Comment on Book</h2>
         <h4>ID</h4>
         <input type="text" id="id" />
@@ -25,5 +25,17 @@
         <input type="text" id="comment" />
         <button type="button" onclick="commentBook()">Add Comment</button>
         <script src="script.js"></script>
+
+    <!-- Delete a Book -->
+    <h2>Delete a Book</h2>
+    <h4>ID</h4>
+    <input type="text" id="delete-id" />
+    <button type="button" onclick="deleteOneBook()">Delete Book</button>
+    <br/>
+
+    <!-- Delete All Books -->
+    <button onclick="deleteAllBooks()">Delete ALL Books</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
